@@ -46,6 +46,11 @@ namespace WebApplication1.Controllers
 
             return (answer, value);
         }
+
+        private void UpdateValue()
+        {
+
+        }
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger){ _logger = logger; }
@@ -54,6 +59,7 @@ namespace WebApplication1.Controllers
 
         public IActionResult Quiz()
         {
+            quiz.ResetСurrentValue();
             (ViewBag.Answer, ViewBag.Value) = RandomizeValues();
             return View();
         }
@@ -66,26 +72,21 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-
         [HttpPost]
         public IActionResult QuizNext(int hanswer, string hexpression, int answer)
         {
-            quiz.answersCount += 1;
-            if (hanswer == answer) quiz.rightAnswersCount += 1;
-            quiz.Results.Add(hexpression + " = " + answer);
+            quiz.UpdateValue(hanswer, hexpression, answer);
             (ViewBag.Answer, ViewBag.Value) = RandomizeValues();         
             return View("Quiz");
         }
 
         public IActionResult QuizFinish(int hanswer, string hexpression, int answer)
         {
-            quiz.answersCount += 1;
-            if (hanswer == answer) quiz.rightAnswersCount += 1;
-            quiz.Results.Add(hexpression + " = " + answer);
+            quiz.UpdateValue(hanswer, hexpression, answer);
 
-            ViewBag.RightAnswersCount = quiz.rightAnswersCount;
-            ViewBag.AnswersCount = quiz.answersCount;
-            ViewBag.Results = quiz.Results;
+            ViewBag.RightAnswersCount = quiz.curRightAnswersCount;
+            ViewBag.AnswersCount = quiz.curAnswersCount;
+            ViewBag.Results = quiz.curResults;
             return View("QuizResult");
         }
 

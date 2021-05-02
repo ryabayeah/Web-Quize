@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ryaba\\Desktop\\учеба 3 курс\\wbe 3\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\Users\\Ryaba\\Desktop\\учеба 3 курс\\wbe 3\\Web-Quize\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ryaba\\Desktop\\учеба 3 курс\\wbe 3\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\Users\\Ryaba\\Desktop\\учеба 3 курс\\wbe 3\\Web-Quize\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ryaba\\Desktop\\учеба 3 курс\\wbe 3\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\Ryaba\\Desktop\\учеба 3 курс\\wbe 3\\Web-Quize\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "C:\\Users\\Ryaba\\Desktop\\учеба 3 курс\\wbe 3\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectPath": "C:\\Users\\Ryaba\\Desktop\\учеба 3 курс\\wbe 3\\Web-Quize\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
         "packagesPath": "C:\\Users\\Ryaba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ryaba\\Desktop\\учеба 3 курс\\wbe 3\\WebApplication1\\WebApplication1\\obj\\",
+        "outputPath": "C:\\Users\\Ryaba\\Desktop\\учеба 3 курс\\wbe 3\\Web-Quize\\WebApplication1\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ryaba\\AppData\\Roaming\\NuGet\\NuGet.Config",
